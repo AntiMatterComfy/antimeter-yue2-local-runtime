@@ -1,0 +1,19 @@
+[project]
+name = "antimeter-yue2-local-runtime"
+description = "A local Windows WSL and Linux runtime for the official YuE2 music pipeline in ComfyUI."
+version = "1.1.1"
+license = {file = "LICENSE"}
+requires-python = ">=3.10"
+classifiers = [
+    "Environment :: GPU :: NVIDIA CUDA",
+    "Operating System :: Microsoft :: Windows",
+    "Operating System :: POSIX :: Linux",
+]
+
+[project.urls]
+Repository = "https://github.com/AntiMatterComfy/antimeter-yue2-local-runtime"
+Issues = "https://github.com/AntiMatterComfy/antimeter-yue2-local-runtime/issues"
+
+[tool.comfy]
+PublisherId = "antimatter"
+DisplayName = "Antimeter YuE2 Local Runtime"

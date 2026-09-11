@@ -1,0 +1,5 @@
+#!/usr/bin/env sh
+set -eu
+SCRIPT_DIR=$(CDPATH= cd -- "$(dirname -- "$0")" && pwd)
+export HF_HOME="${YUE2_HF_HOME:-$SCRIPT_DIR/hf_cache}"
+exec "$SCRIPT_DIR/.venv/bin/python" "$SCRIPT_DIR/run_yue2_comfy.py" "$@"

@@ -1,0 +1,118 @@
+{
+  "last_node_id": 2,
+  "last_link_id": 1,
+  "nodes": [
+    {
+      "id": 1,
+      "type": "AntimeterYuE2Generate",
+      "pos": [
+        100,
+        120
+      ],
+      "size": [
+        560,
+        720
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "audio",
+          "type": "AUDIO",
+          "links": [
+            1
+          ]
+        },
+        {
+          "name": "score_path",
+          "type": "STRING",
+          "links": null
+        },
+        {
+          "name": "artifacts_path",
+          "type": "STRING",
+          "links": null
+        },
+        {
+          "name": "gpu_status",
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Antimeter YuE2 Generate"
+      },
+      "widgets_values": [
+        "English alt-pop, intimate female vocal, warm analogue synths, clean electric guitar, punchy drums, wide modern mix",
+        "[Verse]\nCity lights are turning blue\nI keep a little fire for you\n\n[Pre-Chorus]\nEvery shadow learns to move\nWhen I hear the sound of you\n\n[Chorus]\nWe are brighter than the rain\nRunning wild through neon lanes\nHold the night until it shines\nYou and I, you and I",
+        "full",
+        42,
+        "m-a-p/YuE2-Vae",
+        "Ubuntu",
+        "~/yue2-comfy/run_yue2_comfy",
+        20,
+        "YuE2",
+        "auto"
+      ]
+    },
+    {
+      "id": 2,
+      "type": "SaveAudio",
+      "pos": [
+        750,
+        370
+      ],
+      "size": [
+        300,
+        110
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "audio",
+          "type": "AUDIO",
+          "link": 1
+        }
+      ],
+      "outputs": [
+        {
+          "name": "audio",
+          "type": "AUDIO",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Save Audio (FLAC)"
+      },
+      "widgets_values": [
+        "audio/YuE2"
+      ]
+    }
+  ],
+  "links": [
+    [
+      1,
+      1,
+      0,
+      2,
+      0,
+      "AUDIO"
+    ]
+  ],
+  "groups": [],
+  "config": {},
+  "extra": {
+    "ds": {
+      "scale": 1,
+      "offset": [
+        0,
+        0
+      ]
+    }
+  },
+  "version": 0.4
+}
