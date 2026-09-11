@@ -1,0 +1,4 @@
+# The Windows installer copies these files into WSL. Keep them executable by POSIX shells after a Windows Git checkout.
+wsl/** text eol=lf
+installers/*.sh text eol=lf
+.github/workflows/*.yml text eol=lf

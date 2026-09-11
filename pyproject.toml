@@ -1,7 +1,7 @@
 [project]
 name = "antimeter-yue2-local-runtime"
 description = "A local Windows WSL and Linux runtime for the official YuE2 music pipeline in ComfyUI."
-version = "1.1.1"
+version = "1.1.2"
 license = {file = "LICENSE"}
 requires-python = ">=3.10"
 classifiers = [
